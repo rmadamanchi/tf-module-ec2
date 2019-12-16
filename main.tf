@@ -1,5 +1,6 @@
 provider "aws" {
   profile    = "default"
+  region = var.Region
 }
 
 data "aws_ami" "ubuntu" {
@@ -23,6 +24,6 @@ resource "aws_instance" "main" {
   instance_type = "t2.nano"
 
   tags = {
-    Name = "${var.Name}"
+    Name = var.Name
   }
 }
