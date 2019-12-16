@@ -1,3 +1,3 @@
-variable "instance_name" {
+variable "Name" {
   description = "EC2 Instance Name"
 }

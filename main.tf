@@ -23,6 +23,6 @@ resource "aws_instance" "main" {
   instance_type = "t2.nano"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "${var.Name}"
   }
 }
