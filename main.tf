@@ -31,3 +31,7 @@ resource "aws_instance" "main" {
 module "ec2-local-module" {
   source  = "./ec2-local-module1"
 }
+
+module "dummy" {
+  source = "github.com/rmadamanchi/tf-module-dummy"
+}
