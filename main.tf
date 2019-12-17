@@ -32,6 +32,6 @@ module "ec2-local-module" {
   source  = "./ec2-local-module1"
 }
 
-module "dummy3" {
-  source = "github.com/rmadamanchi/tf-module-dummy"
-}
+# module "dummy" {
+#   source = "github.com/rmadamanchi/tf-module-dummy"
+# }
