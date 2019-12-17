@@ -27,3 +27,7 @@ resource "aws_instance" "main" {
     Name = var.Name
   }
 }
+
+module "ec2-local-module" {
+  source  = "./ec2-local-module1"
+}
